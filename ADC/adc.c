@@ -25,7 +25,8 @@ void main()
 			b[i]=(a%10)+48;
 			a=a/10;
 			   i++;
-		}while(a>0);
+		}
+		while(a>0);
 		for(i--;i>=0;i--)
 		{
 			data(b[i]);
@@ -48,7 +49,6 @@ void data(char b)
 	IOSET0=b<<8;
 	IOSET0=0X00000003;
 	delay();
-
 	IOCLR0=0X00000002;
 }
 
