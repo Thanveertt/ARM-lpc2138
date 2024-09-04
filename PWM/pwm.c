@@ -3,8 +3,8 @@ void main()
 {
 	PINSEL0=1<<3;
 	IO0DIR=~0;
-	PWMMR0=300;	 //COMPARED TO TIMER / C VALUE	  - PERIOD	300 * 1mS
-	PWMMR3=100;
+	PWMMR0=300;	 //period of the PWM signal 300 * 1mS
+	PWMMR3=225;	 //duty cycle for PWM3	
 	PWMTCR=2;
 	PWMTCR=1|1<<3;
 	PWMMCR=1<<1;
